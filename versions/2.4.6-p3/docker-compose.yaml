@@ -3,7 +3,7 @@ services:
   web:
     image: ghcr.io/alexcheng1982/docker-magento2:2.4.6-p3
     ports:
-      - "80:80"
+      - "8081:80"
     links:
       - db
       - opensearch
