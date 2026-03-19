@@ -67,7 +67,6 @@ const filesToCopy = [
 const templatedFiles = ["Dockerfile", "docker-compose.yaml"];
 Promise.map(versions, (versionConfig) => {
   const context = merge({}, versionConfig);
-  const version = versionConfig.magento2Version;
   createVersionDir(version);
   return Promise.map(filesToCopy, (fileToCopy) =>
     copyFile(fileToCopy, version)
