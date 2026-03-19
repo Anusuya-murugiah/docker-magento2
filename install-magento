@@ -19,7 +19,7 @@ su www-data <<EOSU
     --admin-lastname=$MAGENTO_ADMIN_LASTNAME \
     --admin-email=$MAGENTO_ADMIN_EMAIL \
     --admin-user=$MAGENTO_ADMIN_USERNAME \
-    --admin-password=$MAGENTO_ADMIN_PASSWORD \
+    --admin-password=root@123 \
     --use-rewrites=1 \
     --search-engine=opensearch \
     --opensearch-host=$OPENSEARCH_HOST \
